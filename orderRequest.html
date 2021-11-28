@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/order.css" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>Order</title>
 </head>
 <body>
+<header class="p-3 bg-dark text-white">
+    <div class="container" bis_skin_checked="1">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+             bis_skin_checked="1">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/imageGallery" class="nav-link px-2 text-secondary"><font style="vertical-align: inherit;"><span
+                        style="vertical-align: inherit;">Main</span></font></a></li>
+                <li><a href="/imageGallery/orderRequest.html" class="nav-link px-2 text-white"><font
+                        style="vertical-align: inherit;"><span style="vertical-align: inherit;">Order</span></font></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
 <a href="mainPage.html">Main</a>
 <a href="orderRequest.html">Order</a>
 <h1>Order</h1>
-<input placeholder="Enter your mail" required>
+<form method="post">
+    <input class="input" name="name" type="text" placeholder="Name" required>
+    <input class="input" name="mail" type="text" placeholder="Mail" required>
+    <textarea class="input" name="comment" rows="8" placeholder="Comment"></textarea>
+    <input class="input" name="file" type="file">
+    <input class="btn" name="application" type="submit" value="Send application">
+</form>
 </body>
 </html>
